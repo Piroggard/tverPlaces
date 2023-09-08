@@ -34,4 +34,8 @@ public class EmailController {
         return "все хорошо !";
     }
 
+    @GetMapping("/hi")
+    public String hiTest (){
+        return "Привет, теперь какое то маленькое приложение сое в сети, ты же офигел скажи скажи))) ;";
+    }
 }
