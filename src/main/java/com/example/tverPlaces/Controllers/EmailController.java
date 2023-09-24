@@ -2,24 +2,19 @@ package com.example.tverPlaces.Controllers;
 
 import com.example.tverPlaces.Model.EmailRequest;
 import com.example.tverPlaces.Model.User;
+import com.example.tverPlaces.servise.EmailService;
 import com.example.tverPlaces.servise.UserServise;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-@RestController
 @Component
-@Service
+@RestController
 @AllArgsConstructor
 public class EmailController {
 
     private static final Logger log = LoggerFactory.getLogger(EmailController.class);
-
-
     private final EmailService emailService;
     private final UserServise userServise;
 

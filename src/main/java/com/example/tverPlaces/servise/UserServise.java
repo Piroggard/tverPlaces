@@ -1,19 +1,15 @@
 package com.example.tverPlaces.servise;
 
 import com.example.tverPlaces.Controllers.EmailController;
-import com.example.tverPlaces.Controllers.EmailService;
 import com.example.tverPlaces.Model.User;
 import com.example.tverPlaces.storage.DbStorage;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.Random;
 
-@Service
 @Component
 @AllArgsConstructor
 public class UserServise {

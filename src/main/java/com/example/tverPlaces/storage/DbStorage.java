@@ -19,7 +19,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @Component
-@Service
 @AllArgsConstructor
 public class DbStorage {
     private static final Logger log = LoggerFactory.getLogger(EmailController.class);

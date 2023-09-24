@@ -1,5 +1,6 @@
-package com.example.tverPlaces.Controllers;
+package com.example.tverPlaces.servise;
 
+import com.example.tverPlaces.Controllers.EmailController;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,9 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
+@Component
 @AllArgsConstructor
 public class EmailService {
     private static final Logger log = LoggerFactory.getLogger(EmailController.class);
