@@ -19,6 +19,7 @@ public class EmailController {
 
     private static final Logger log = LoggerFactory.getLogger(EmailController.class);
 
+
     private final EmailService emailService;
     private final UserServise userServise;
 
